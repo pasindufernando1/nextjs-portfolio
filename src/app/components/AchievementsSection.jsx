@@ -20,8 +20,13 @@ const achievementsList = [
     value: "1",
   },
   {
+    metric: "Current GPA",
+    value: "3.99/4.0",
+  },
+  {
     metric: "Awards & Honors",
-    value: "10+",
+    value: "10",
+    postfix: "+",
   },
   {
     metric: "Volunteering",
