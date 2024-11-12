@@ -24,7 +24,7 @@ const HeroSection = () => {
               sequence={[
                 "Pasindu Fernando",
                 1000,
-                "A 4th Year CS(Hons) Undergraduate at UCSC",
+                "CS(Hons) Undergraduate at UCSC",
                 1000,
                 "A Full Stack Developer",
                 1000,
@@ -34,6 +34,7 @@ const HeroSection = () => {
               wrapper="span"
               speed={50}
               repeat={Infinity}
+               className="text-7xl"
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
