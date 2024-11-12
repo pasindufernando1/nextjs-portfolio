@@ -24,7 +24,7 @@ const HeroSection = () => {
               sequence={[
                 "Pasindu Fernando",
                 1000,
-                "A 4th Year CS(Hons) Undergraduate",
+                "A 4th Year CS(Hons) Undergraduate at UCSC",
                 1000,
                 "A Full Stack Developer",
                 1000,
