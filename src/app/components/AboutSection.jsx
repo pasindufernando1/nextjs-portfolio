@@ -11,13 +11,14 @@ const TAB_DATA = [
     content: (
       <ul className="grid grid-cols-2 gap-x-4 list-disc pl-2">
         <li>Go</li>
+        <li>Java</li>
+        <li>Spring Boot</li>
         <li>C/C++</li>
         <li>Kubernetes</li>
-        <li>Azure</li>
+        <li>Azure Environments</li>
         <li>Ballerina</li>
         <li>AWS hosting</li>
-        <li>Spring Boot</li>
-        <li>React.js</li>
+        <li>React</li>
         <li>PHP</li>
         <li>Python</li>
         <li>R</li>
@@ -30,6 +31,7 @@ const TAB_DATA = [
         <li>SQLite</li>
         <li>Kotlin</li>
         <li>Flutter</li>
+        <li>Stoplight Prism</li>
 
       </ul>
     ),
