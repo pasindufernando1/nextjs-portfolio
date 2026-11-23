@@ -194,7 +194,7 @@ main, .footer, .nav { position: relative; z-index: 2; }
   padding: 3px;
 }
 .holo-inner { position: absolute; inset: 3px; overflow: hidden; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); background: var(--bg-2); }
-.holo-inner img { object-fit: cover; object-position: 50% 22%; transform: scale(1.7); transform-origin: 50% 24%; }
+.holo-inner img { object-fit: cover; object-position: 50% 30%; transform: scale(1.45); transform-origin: 50% 32%; }
 .holo-inner::after {
   content: ""; position: absolute; inset: 0; mix-blend-mode: color; opacity: 0.55;
   background: linear-gradient(160deg, var(--cyan), var(--violet) 50%, var(--magenta));

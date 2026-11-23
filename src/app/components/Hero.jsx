@@ -29,7 +29,7 @@ export default function Hero() {
             <div className="ring ring-3" />
             <div className="holo-frame">
               <div className="holo-inner">
-                <Image src="/images/mydp.png" alt="Portrait of Pasindu Fernando" fill sizes="400px" priority />
+                <Image src="/images/profile.jpg" alt="Portrait of Pasindu Fernando" fill sizes="400px" priority />
               </div>
               <div className="holo-scan" />
             </div>
