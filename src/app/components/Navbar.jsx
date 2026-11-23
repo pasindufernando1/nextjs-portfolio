@@ -1,70 +1,47 @@
 "use client";
-import Link from "next/link";
-import React, { useState } from "react";
-import NavLink from "./NavLink";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import MenuOverlay from "./MenuOverlay";
+import { useEffect, useState } from "react";
 
-const navLinks = [
-  {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
+const LINKS = [
+  { href: "#identity", idx: "01", title: "Identity" },
+  { href: "#log", idx: "02", title: "Mission log" },
+  { href: "#honors", idx: "03", title: "Honors" },
+  { href: "#projects", idx: "04", title: "Projects" },
+  { href: "#arsenal", idx: "05", title: "Arsenal" },
 ];
 
-const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(scrollY > 20);
+    onScroll();
+    addEventListener("scroll", onScroll, { passive: true });
+    return () => removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
-          href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
-        >
-          
-        </Link>
-        {/* Add an image */}
-        
-
-        <div className="mobile-menu block md:hidden">
-          {!navbarOpen ? (
-            <button
-              onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
-            >
-              <Bars3Icon className="h-5 w-5" />
-            </button>
-          ) : (
-            <button
-              onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
-            >
-              <XMarkIcon className="h-5 w-5" />
-            </button>
-          )}
-        </div>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <NavLink href={link.path} title={link.title} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
-    </nav>
+    <header className={`nav${scrolled ? " scrolled" : ""}`}>
+      <a href="#top" className="logo" aria-label="Home">
+        <span className="logo-mark">PF</span>
+        <span className="logo-dot" />
+      </a>
+      <button
+        className="nav-toggle"
+        aria-label="Toggle menu"
+        aria-expanded={open}
+        onClick={() => setOpen((o) => !o)}
+      >
+        <span /><span />
+      </button>
+      <nav className={`nav-links${open ? " open" : ""}`}>
+        {LINKS.map((l) => (
+          <a key={l.href} href={l.href} onClick={() => setOpen(false)}>
+            <i>{l.idx}</i>{l.title}
+          </a>
+        ))}
+        <a href="#uplink" className="nav-cta" onClick={() => setOpen(false)}>Uplink</a>
+      </nav>
+    </header>
   );
-};
-
-export default Navbar;
+}
