@@ -26,5 +26,8 @@
     "resend": "^4.0.1-alpha.0",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "3.3.3"
+  },
+  "engines": {
+    "node": "26.x"
   }
 }
