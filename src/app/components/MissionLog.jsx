@@ -23,7 +23,15 @@ const ENTRIES = [
   {
     meta: "MAY 2024 — MAY 2025 // CLOUDNET RESEARCH GROUP, UCSC",
     title: "Undergraduate Researcher",
-    body: "Thesis: Enhancing System Checkpoints for Seamless Fault-Tolerant Live Virtual Machine Migration, supervised by Dr. Dinuni K. Fernando.",
+    body: (
+      <>
+        Thesis:{" "}
+        <a href="https://dl.ucsc.cmb.ac.lk/jspui/handle/123456789/4918" target="_blank" rel="noopener" className="inline-link">
+          Enhancing System Checkpoints for Seamless Fault-Tolerant Live Virtual Machine Migration
+        </a>
+        , supervised by Dr. Dinuni K. Fernando.
+      </>
+    ),
     points: [
       "Designed Mem-Finer, which checkpoints only the bytes that changed inside each memory page.",
       "Cut checkpoint data by 51–69% and shortened recovery time versus Gzip, LZ4 and Zstd baselines, with comparable migration time and downtime.",

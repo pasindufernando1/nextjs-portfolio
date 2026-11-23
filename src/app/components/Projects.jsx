@@ -23,6 +23,7 @@ const PROJECTS = [
     title: "Mem-Finer",
     body: "Byte-level memory checkpointing for fault-tolerant live VM migration: saves only the bytes that changed inside each page. Cut checkpoint data by 51–69% and shortened recovery time in QEMU/KVM.",
     tags: ["QEMU/KVM", "Checkpointing", "Live migration"],
+    url: "https://dl.ucsc.cmb.ac.lk/jspui/handle/123456789/4918",
   },
   {
     kind: "INTERNSHIP · CHOREO",
