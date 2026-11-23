@@ -11,9 +11,9 @@ export default function Hero() {
           <h1 className="glitch" data-text="PASINDU FERNANDO">PASINDU FERNANDO</h1>
           <Typed />
           <p className="hero-sub">
-            Software Engineer at <strong>Choreo Labs</strong> (WSO2). I build the Ballerina
-            Language Server and the editor tooling developers live in, with a research
-            background in cloud computing and live VM migration.
+            Software Engineer at <strong>Choreo Labs</strong> (formerly WSO2), building the
+            language server and VS Code extension behind Choreo Integrator. Gold-medal CS
+            graduate with research in fault-tolerant live VM migration.
           </p>
           <div className="hero-cta">
             <a href="#projects" className="btn btn-primary">View projects</a>

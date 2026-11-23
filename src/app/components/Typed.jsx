@@ -3,9 +3,10 @@ import { useEffect, useState } from "react";
 
 const ROLES = [
   "Software Engineer @ Choreo Labs",
-  "Building the Ballerina Language Server",
-  "Developer tooling // LSP // VS Code",
-  "Systems researcher: live VM migration",
+  "Building Choreo Integrator's dev tools",
+  "Language servers // VS Code // compilers",
+  "Systems researcher: fault-tolerant VMs",
+  "CMMRS 2025 · Two gold medals",
 ];
 
 export default function Typed() {

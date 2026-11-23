@@ -12,7 +12,7 @@ export default function Uplink() {
           developer tooling and systems.
         </p>
         <div className="uplink-links">
-          <a href="mailto:sulakshana1234567@gmail.com" className="btn btn-primary">Send a transmission</a>
+          <a href="mailto:pasindusulakshana5@gmail.com" className="btn btn-primary">Send a transmission</a>
           <a href="https://www.linkedin.com/in/pasindufdo/" target="_blank" rel="noopener" className="btn btn-ghost">LinkedIn</a>
           <a href="https://github.com/pasindufernando1" target="_blank" rel="noopener" className="btn btn-ghost">GitHub</a>
         </div>

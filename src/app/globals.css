@@ -281,6 +281,9 @@ main, .footer, .nav { position: relative; z-index: 2; }
 .t-meta { margin: 0 0 6px; font: 500 11px var(--font-mono); letter-spacing: 2px; color: var(--magenta); }
 .t-card h3 { margin: 0 0 10px; font: 700 19px var(--font-display); letter-spacing: 1px; }
 .t-card p { margin: 0 0 14px; color: var(--muted); }
+.t-points { margin: -4px 0 16px; display: grid; gap: 6px; }
+.t-points li { position: relative; padding-left: 18px; color: var(--muted); font-size: 15px; }
+.t-points li::before { content: "▹"; position: absolute; left: 0; color: var(--cyan); }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tags li {
   font: 400 11px var(--font-mono); color: var(--cyan); padding: 4px 10px;
@@ -324,7 +327,7 @@ main, .footer, .nav { position: relative; z-index: 2; }
 .card .card-arrow { z-index: 2; text-shadow: 0 0 8px var(--bg); }
 
 /* Honors */
-.honors { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.honors { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .honor {
   position: relative; background: var(--panel); border: 1px solid var(--line); padding: 26px 22px;
   border-top: 2px solid var(--magenta); transition: transform 0.3s, box-shadow 0.3s;

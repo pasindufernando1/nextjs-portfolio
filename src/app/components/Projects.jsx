@@ -18,6 +18,19 @@ const PROJECTS = [
     url: "https://github.com/wso2/vscode-extensions",
   },
   {
+    featured: true,
+    kind: "RESEARCH · THESIS",
+    title: "Mem-Finer",
+    body: "Byte-level memory checkpointing for fault-tolerant live VM migration: saves only the bytes that changed inside each page. Cut checkpoint data by 51–69% and shortened recovery time in QEMU/KVM.",
+    tags: ["QEMU/KVM", "Checkpointing", "Live migration"],
+  },
+  {
+    kind: "INTERNSHIP · CHOREO",
+    title: "Mock Service Generator",
+    body: "Auto-generates realistic mock responses for services not yet built, so dependent teams can work in parallel.",
+    tags: ["Go", "Ballerina", "Kubernetes"],
+  },
+  {
     kind: "TEAM LEAD · A+",
     title: "VentureVerse",
     body: "Connects Sri Lankan entrepreneurs with investors and mentors: profiles, pitch sessions, matching and secure messaging.",
@@ -72,13 +85,14 @@ export default function Projects() {
     <section id="projects" className="section">
       <SectionHead idx="04" title="Projects" />
       <div className="cards">
-        {PROJECTS.map((p) => (
-          <a
+        {PROJECTS.map((p) => {
+          const Tag = p.url ? "a" : "div";
+          const link = p.url ? { href: p.url, target: "_blank", rel: "noopener" } : {};
+          return (
+          <Tag
             key={p.title}
             className={`card reveal${p.featured ? " featured" : ""}`}
-            href={p.url}
-            target="_blank"
-            rel="noopener"
+            {...link}
           >
             {p.image && (
               <div className="card-media">
@@ -89,9 +103,10 @@ export default function Projects() {
             <h3>{p.title}</h3>
             <p>{p.body}</p>
             <ul className="tags">{p.tags.map((t) => <li key={t}>{t}</li>)}</ul>
-            <span className="card-arrow">↗</span>
-          </a>
-        ))}
+            {p.url && <span className="card-arrow">↗</span>}
+          </Tag>
+          );
+        })}
       </div>
     </section>
   );

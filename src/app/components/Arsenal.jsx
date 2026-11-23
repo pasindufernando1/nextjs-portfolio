@@ -3,8 +3,10 @@ import SectionHead from "./SectionHead";
 const GROUPS = [
   { label: "PRIMARY", primary: true, items: ["Java", "Ballerina", "Go", "C"] },
   { label: "LANGUAGES", items: ["TypeScript", "JavaScript", "Kotlin", "Python", "C++", "PHP", "Dart", "R"] },
-  { label: "TOOLING & PROTOCOLS", items: ["Language Server Protocol", "VS Code Extensions", "Gradle", "Maven", "OpenAPI", "Stoplight Prism", "Git", "Linux"] },
-  { label: "PLATFORMS & DATA", items: ["Spring Boot", "Node.js", "React", "Flutter", "Docker", "Kubernetes", "AWS", "Azure", "KVM / QEMU", "PostgreSQL", "MySQL", "MongoDB", "Choreo"] },
+  { label: "DEVELOPER TOOLS", items: ["Language Server Protocol", "VS Code Extensions", "Compiler APIs", "Static analysis", "Code generation", "OpenAPI", "Stoplight Prism"] },
+  { label: "SYSTEMS & CLOUD", items: ["QEMU / KVM", "Virtualization", "Kubernetes", "Docker", "Linux", "Redis", "AWS", "Azure"] },
+  { label: "ENGINEERING PRACTICE", items: ["Gradle", "Maven", "GitHub Actions", "Testing & coverage", "Git", "SQL"] },
+  { label: "FRAMEWORKS & DATA", items: ["Spring Boot", "Node.js", "React", "Flutter", "PostgreSQL", "MySQL", "MongoDB"] },
 ];
 
 export default function Arsenal() {

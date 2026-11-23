@@ -4,7 +4,7 @@ const STATS = [
   { count: 200, suffix: "+", label: "Merged pull requests" },
   { count: 3.98, decimals: 2, label: "GPA / 4.00 · BSc (Hons) CS" },
   { count: 1, prefix: "#", label: "Rank in batch · UCSC" },
-  { count: 10, suffix: "+", label: "Awards & honors" },
+  { count: 2, label: "Gold medals · Univ. of Colombo" },
 ];
 
 export default function Identity() {
@@ -18,14 +18,16 @@ export default function Identity() {
             compilers, language servers and runtimes that make other developers fast.
           </p>
           <p>
-            By day I work in R&amp;D at Choreo Labs, shipping features for the Ballerina
-            Language Server and the WSO2 VS Code extensions: completions, diagnostics, code
-            actions and the test infrastructure that keeps them honest.
+            At Choreo Labs (formerly WSO2) I build the developer tools behind Choreo
+            Integrator, a low-code IDE where developers design integrations both visually
+            and in code. I turn the compiler&apos;s understanding of code into visual editing,
+            live error reporting and code generation.
           </p>
           <p>
-            I graduated top of my batch in Computer Science at the University of Colombo
-            School of Computing, and worked as a full-time researcher with the Cloudnet
-            Research Group, specialising in cloud computing and VM migration.
+            I graduated top of the Computer Science batch at the University of Colombo
+            School of Computing with two gold medals, and researched how to make cloud
+            virtual machines more fault tolerant. I like owning hard problems end to end
+            and bringing a research mindset to production engineering.
           </p>
           <p>Off-duty: tennis, carrom, music and volunteering.</p>
         </div>
